@@ -10,7 +10,7 @@
   "model": "opusplan",
   "statusLine": {
     "type": "command",
-    "command": "tee /tmp/statusline-debug.json | bash /home/rk83o/.claude/statusline-command.sh"
+    "command": "tee /tmp/statusline-debug.json | bash /Users/ritsutokosaka/.claude/statusline-command.sh"
   },
   "enabledPlugins": {
     "document-skills@anthropic-agent-skills": true,
