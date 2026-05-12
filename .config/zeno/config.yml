@@ -1,0 +1,124 @@
+snippets:
+  - name: git status
+    keyword: gs
+    snippet: git status
+
+  - name: git add all
+    keyword: ga
+    snippet: git add -A
+
+  - name: git commit
+    keyword: gc
+    snippet: git commit -m ""
+
+  - name: git push
+    keyword: gp
+    snippet: git push
+
+  - name: git add commit push
+    keyword: gacp
+    snippet: git add -A && git commit -m "{{commit_message}}" && git push
+
+  - name: git log
+    keyword: gl
+    snippet: git log --oneline
+
+  - name: cd C drive
+    keyword: c
+    snippet: cd /mnt/c
+
+  - name: cd Todo
+    keyword: todo
+    snippet: cd ~/obsidian/10_Todo
+
+  - name: cd wezterm
+    keyword: wez
+    snippet: cd /mnt/c/Users/rk83o/.config/wezterm
+
+  - name: cd nvim
+    keyword: neov
+    snippet: cd ~/.config/nvim
+
+  - name: cd claude
+    keyword: cc
+    snippet: cd ~/.claude
+
+  - name: cd glzr
+    keyword: glzr
+    snippet: cd /mnt/c/Users/rk83o/.glzr
+
+  - name: cd es_workplace
+    keyword: es
+    snippet: cd ~/obsidian/40_Career/04_Es_Workplace
+
+  - name: cd config dir
+    keyword: cfg
+    snippet: cd ~/.config
+
+  - name: cd nextjs-dashboard
+    keyword: nextjs
+    snippet: cd ~/dev/101/nextjs-dashboard
+
+  - name: cd InterviewPrep
+    keyword: interview
+    snippet: cd ~/obsidian/40_Career/03_InterviewPrep
+
+  - name: cd hono-memo
+    keyword: hono
+    snippet: cd ~/dev/101/hono-memo
+
+  - name: cd zeno
+    keyword: zeno
+    snippet: cd ~/.config/zeno
+
+  - name: cd uni
+    keyword: uni
+    snippet: cd ~/uni
+
+  - name: cd semi
+    keyword: semi
+    snippet: cd ~/uni/44_semi
+
+  - name: cd obsidian
+    keyword: obsidian
+    snippet: cd /home/rk83o/obsidian
+
+  - name: fix mouse tracking leak
+    keyword: fixterm
+    snippet: fixterm
+
+  - name: mount G drive
+    keyword: mountg
+    snippet: 'sudo mount -t drvfs G: /mnt/g'
+
+  - name: make transcribe
+    keyword: mktranscribe
+    snippet: make transcribe
+
+  - name: make pull-audio
+    keyword: mkpull
+    snippet: make pull-audio
+
+  - name: make intake
+    keyword: mkin
+    snippet: make intake
+
+  - name: make convert
+    keyword: mkconvert
+    snippet: make convert
+
+  - name: make convert-file
+    keyword: mkconvertf
+    snippet: 'make convert-file FILE='
+
+  - name: make transcribe-file
+    keyword: mktranscribef
+    snippet: 'make transcribe-file FILE='
+
+  - name: make convert-vision
+    keyword: mkconvertv
+    snippet: make convert-vision
+
+  - name: make convert-vision-file
+    keyword: mkconvertvf
+    snippet: 'make convert-vision-file FILE='
