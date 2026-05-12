@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch",
+      "Edit(*.md)",
+      "Write(*.md)"
+    ]
+  },
+  "model": "opusplan",
+  "statusLine": {
+    "type": "command",
+    "command": "tee /tmp/statusline-debug.json | bash /home/rk83o/.claude/statusline-command.sh"
+  },
+  "enabledPlugins": {
+    "document-skills@anthropic-agent-skills": true,
+    "claude-md-management@claude-plugins-official": true,
+    "skill-creator@claude-plugins-official": true,
+    "lua-lsp@claude-plugins-official": true,
+    "pyright-lsp@claude-plugins-official": true,
+    "code-review@claude-plugins-official": true,
+    "typescript-lsp@claude-plugins-official": true
+  },
+  "language": "Japanese",
+  "voice": {
+    "enabled": false,
+    "mode": "hold"
+  },
+  "theme": "dark-daltonized",
+  "editorMode": "vim",
+  "voiceEnabled": false,
+  "agentPushNotifEnabled": true
+}
