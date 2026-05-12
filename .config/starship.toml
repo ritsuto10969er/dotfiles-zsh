@@ -1,0 +1,108 @@
+format = """
+$all
+"""
+
+scan_timeout = 100
+
+# パレット（紫ベース・青寄り）
+# directory  : #A78BFA 紫
+# git branch : #818CF8 青紫
+# git status : #6B7FBF くすんだ青紫
+# character  : #A78BFA directoryと統一
+# languages  : #7A82A6 グレー寄り青紫
+# error      : #C07070 くすんだ赤（アクセント）
+
+[directory]
+style = "fg:#A78BFA"
+truncation_length = 1
+truncate_to_repo = false
+fish_style_pwd_dir_length = 0
+
+[line_break]
+disabled = true
+
+[character]
+success_symbol = " [󰁔](fg:#A78BFA) "
+error_symbol = " [ ](fg:#C07070)[ ](fg:#C07070) "
+format = "$symbol"
+disabled = false
+
+[git_branch]
+disabled = false
+symbol = " "
+style = "fg:#818CF8"
+truncation_length = 5
+format = '[$symbol$branch(:$remote_branch)]($style) '
+
+[git_commit]
+disabled = true
+
+[git_state]
+disabled = false
+rebase = "rebasing"
+merge = "merging"
+revert = "reverting"
+cherry_pick = " picking"
+bisect = "bisecting"
+am = "am'ing"
+am_or_rebase = "am/rebase"
+
+[git_status]
+disabled = false
+style = "fg:#6B7FBF"
+stashed = " ${count} "
+ahead = "󰞙 ${count} "
+behind = "󰒮 ${count} "
+diverged = "󰵉 ${ahead_count} ${behind_count} "
+conflicted = " ${count} "
+deleted = " ${count} "
+renamed = " ${count} "
+modified = " ${count} "
+staged = " ${count} "
+untracked = "󱅘 ${count}"
+
+[python]
+disabled = false
+pyenv_version_name = false
+python_binary = 'python'
+format = '[${symbol}(\($virtualenv\))]($style)'
+style = "fg:#7A82A6"
+symbol = "• 󱔎 "
+
+[lua]
+disabled = false
+symbol = "• "
+format = '[${symbol}]($style)'
+style = "fg:#7A82A6"
+
+[nodejs]
+disabled = false
+symbol = "• 󰎙 "
+format = '[${symbol}]($style)'
+style = "fg:#7A82A6"
+
+[package]
+disabled = false
+symbol = "•  "
+display_private = false
+format = '[${symbol}]($style)'
+style = "fg:#7A82A6"
+
+[docker_context]
+disabled = false
+symbol = "•  "
+only_with_files = true
+format = '[${symbol}]($style)'
+style = "fg:#7A82A6"
+
+[golang]
+disabled = false
+symbol = "•  "
+format = '[${symbol}]($style)'
+style = "fg:#7A82A6"
+
+[java]
+disabled = false
+symbol = "•  "
+format = '[${symbol}]($style)'
+style = "fg:#7A82A6"
