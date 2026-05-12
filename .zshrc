@@ -1,8 +1,4 @@
-# Add deno completions to search path
-if [[ ":$FPATH:" != *":/home/rk83o/.zsh/completions:"* ]]; then export FPATH="/home/rk83o/.zsh/completions:$FPATH"; fi
-# Created by newuser for 5.9
 export PATH="$HOME/.local/bin:$PATH"
-. "/home/rk83o/.deno/env"
 
 # compinit: -u で broken symlink を無視（Docker Desktop 未起動時の警告抑制）
 autoload -Uz compinit && compinit -u
@@ -52,7 +48,7 @@ export GROQ_API_KEY=""  # set in ~/.zshrc.local
 export CLAUDE_CODE_NO_FLICKER=1
 
 # bun completions
-[ -s "/home/rk83o/.bun/_bun" ] && source "/home/rk83o/.bun/_bun"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"

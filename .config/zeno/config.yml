@@ -23,17 +23,13 @@ snippets:
     keyword: gl
     snippet: git log --oneline
 
-  - name: cd C drive
-    keyword: c
-    snippet: cd /mnt/c
-
   - name: cd Todo
     keyword: todo
     snippet: cd ~/obsidian/10_Todo
 
   - name: cd wezterm
     keyword: wez
-    snippet: cd /mnt/c/Users/rk83o/.config/wezterm
+    snippet: cd ~/.config/wezterm
 
   - name: cd nvim
     keyword: neov
@@ -43,9 +39,9 @@ snippets:
     keyword: cc
     snippet: cd ~/.claude
 
-  - name: cd glzr
-    keyword: glzr
-    snippet: cd /mnt/c/Users/rk83o/.glzr
+  - name: cd aerospace
+    keyword: aero
+    snippet: cd ~/.config/aerospace
 
   - name: cd es_workplace
     keyword: es
@@ -79,17 +75,17 @@ snippets:
     keyword: semi
     snippet: cd ~/uni/44_semi
 
-  - name: cd obsidian
-    keyword: obsidian
-    snippet: cd /home/rk83o/obsidian
+  # [WSL only] - name: cd obsidian
+  #   keyword: obsidian
+  #   snippet: cd /home/rk83o/obsidian
 
   - name: fix mouse tracking leak
     keyword: fixterm
     snippet: fixterm
 
-  - name: mount G drive
-    keyword: mountg
-    snippet: 'sudo mount -t drvfs G: /mnt/g'
+  # [WSL only] - name: mount G drive
+  #   keyword: mountg
+  #   snippet: 'sudo mount -t drvfs G: /mnt/g'
 
   - name: make transcribe
     keyword: mktranscribe
